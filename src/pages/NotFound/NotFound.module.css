@@ -1,0 +1,19 @@
+.root {
+  vertical-align: center;
+  text-align: center;
+}
+
+.label {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.root p {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.otherFeatures {
+  color: #b4b4b4;
+}

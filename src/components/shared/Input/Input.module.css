@@ -8,3 +8,7 @@
   flex: auto;
   font-size: 16px;
 }
+
+.root:disabled {
+  background-color: rgba(235, 235, 235, 0.36);
+}
