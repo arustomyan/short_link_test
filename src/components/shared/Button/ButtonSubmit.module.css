@@ -1,0 +1,14 @@
+.button {
+  font-size: 16px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0 20px;
+  background-color: inherit;
+  border: 2px solid #ebebeb;
+  transition: background-color 0.2s ease-in-out;
+  /*margin: 0 auto 10px;*/
+}
+
+.button:hover {
+  background-color: #ebebeb;
+}

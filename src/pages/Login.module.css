@@ -1,0 +1,18 @@
+.label {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.authorization {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.authorization span {
+  text-align: center;
+  color: #b4b4b4;
+  font-size: 14px;
+}
