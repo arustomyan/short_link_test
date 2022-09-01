@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './ButtonSubmit.module.css';
 
-function ButtonSubmit({ children }) {
+function ButtonSubmit({ children, onClick }) {
   return (
-    <button type="submit" className={styles.button}>
+    <button type="submit" className={styles.button} onClick={onClick}>
       {children}
     </button>
   );

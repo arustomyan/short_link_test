@@ -1,0 +1,41 @@
+.table {
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+thead th {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 10px 0;
+  background: #d8d8d8;
+  border: none;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.table tbody td {
+  font-size: 16px;
+  height: 35px;
+  padding-left: 5px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.table thead tr th:first-child,
+.table tbody tr td:first-child {
+  text-align: left;
+  border-left: none;
+  padding-left: 10px;
+}
+
+.table thead tr th:last-child,
+.table tbody tr td:last-child {
+  border-right: none;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}

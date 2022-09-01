@@ -8,7 +8,7 @@ function Login() {
   return (
     <>
       <h2 className={styles.label}>SIGN IN</h2>
-      <form className={styles.form}>
+      <form>
         <InputForm name="username" label="Username" />
         <InputForm name="password" label="Password" />
         <div className={styles.authorization}>

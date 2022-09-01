@@ -1,0 +1,74 @@
+[
+  {
+    "id": 74,
+    "short": "WKKY6",
+    "target": "https://ru.wikipedia.org/wiki/URI",
+    "counter": 0
+  },
+  {
+    "id": 76,
+    "short": "HWC2V",
+    "target": "https://ru.wikipedia.org/wiki/URI",
+    "counter": 2
+  },
+  {
+    "id": 91,
+    "short": "APXAW",
+    "target": "https://github.com/",
+    "counter": 0
+  },
+  {
+    "id": 25,
+    "short": "GQI2W",
+    "target": "https://wwws.google.com/",
+    "counter": 0
+  },
+  {
+    "id": 12,
+    "short": "0ZABV",
+    "target": "https://sequelize.org/docs/v6/core-concepts/assocs/",
+    "counter": 3
+  },
+  {
+    "id": 9,
+    "short": "UOVJZ",
+    "target": "https://vk.com/",
+    "counter": 0
+  },
+  {
+    "id": 44,
+    "short": "W1KCU",
+    "target": "https://code.tutsplus.com/ru/tutorials/working-with-tables-in-react-part-one--cms-29682",
+    "counter": 0
+  },
+  {
+    "id": 98,
+    "short": "0G3SV",
+    "target": "http://auto.ru",
+    "counter": 0
+  },
+  {
+    "id": 43,
+    "short": "54NBG",
+    "target": "https://code.tutsplus.com/ru/tutorials/working-with-tables-in-react-part-one--cms-29682",
+    "counter": 0
+  },
+  {
+    "id": 21,
+    "short": "HV9SS",
+    "target": "http://localhost:3000/home",
+    "counter": 0
+  },
+  {
+    "id": 22,
+    "short": "Z52BN",
+    "target": "https://www.google.com/",
+    "counter": 1
+  },
+  {
+    "id": 92,
+    "short": "CA2D5",
+    "target": "https://open.spotify.com/track/3yCVpSkUPFjP59ea7WZttj?si=c0d20d49b3b84db9",
+    "counter": 1
+  }
+]
