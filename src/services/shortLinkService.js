@@ -14,13 +14,12 @@ class ShortLinkService {
   }
 
   createShortLink(link, token) {
-    return fetch(`${this.address}/squeeze`, {
+    const headers = new Headers();
+    headers.append('authorization', `Bearer ${token}`);
+
+    return fetch(`${this.address}/squeeze?link=${link}`, {
       method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/x-www-form-urlencoded',
-        authorization: `Bearer ${token}`,
-      },
+      headers,
     }).then((res) => handleResponse(res));
   }
 
