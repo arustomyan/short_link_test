@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './Login.module.css';
 import InputForm from '../components/shared/InputForm/InputForm';
-import ButtonSubmit from '../components/shared/Button/ButtonSubmit';
+import ButtonSubmit from '../components/shared/Button/Button';
 import useFetching from '../hooks/useFetching';
 import ShortLinkApi from '../services/shortLinkService';
 import useInput from '../hooks/useInput';
@@ -43,7 +43,7 @@ function Registration() {
           type="password"
         />
         <div className={styles.authorization}>
-          <ButtonSubmit>Registration</ButtonSubmit>
+          <ButtonSubmit type="submit">Registration</ButtonSubmit>
           <span>
             Or <Link to="/">Sign in</Link>
           </span>

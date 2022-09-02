@@ -24,6 +24,11 @@ thead th {
   border-right: 1px solid #ddd;
 }
 
+.table thead tr th:nth-child(2),
+.table tbody tr td:nth-child(2) {
+  width: 17rem;
+}
+
 .table thead tr th:first-child,
 .table tbody tr td:first-child {
   text-align: left;
@@ -33,7 +38,9 @@ thead th {
 
 .table thead tr th:last-child,
 .table tbody tr td:last-child {
+  width: 5rem;
   border-right: none;
+  text-align: center;
 }
 
 .table tbody tr:nth-child(even) {

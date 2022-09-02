@@ -18,10 +18,23 @@ class ShortLinkService {
       method: 'POST',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
         authorization: `Bearer ${token}`,
       },
     }).then((res) => handleResponse(res));
+  }
+
+  statistics(token, offset = 0, limit = 15) {
+    const headers = new Headers();
+    headers.append('authorization', `Bearer ${token}`);
+
+    return fetch(
+      `${this.address}/statistics?order=asc_target&offset=${offset}&limit=${limit}`,
+      {
+        method: 'GET',
+        headers,
+      }
+    ).then((res) => handleResponse(res));
   }
 
   register({ username, password }) {

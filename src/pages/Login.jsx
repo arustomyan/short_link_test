@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Login.module.css';
 import InputForm from '../components/shared/InputForm/InputForm';
-import ButtonSubmit from '../components/shared/Button/ButtonSubmit';
+import ButtonSubmit from '../components/shared/Button/Button';
 import useFetching from '../hooks/useFetching';
 import ShortLinkApi from '../services/shortLinkService';
 import AuthContext from '../context/authContext';
@@ -46,7 +46,7 @@ function Login() {
         />
 
         <div className={styles.authorization}>
-          <ButtonSubmit>Sign in</ButtonSubmit>
+          <ButtonSubmit type="submit">Sign in</ButtonSubmit>
           <span>
             Or <Link to="/registration">Sign up</Link>
           </span>

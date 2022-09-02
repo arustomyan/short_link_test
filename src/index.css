@@ -65,3 +65,7 @@ input {
 ul {
   list-style: none;
 }
+
+button:disabled {
+  color: red;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './MakeShortLink.module.css';
-import ButtonSubmit from '../shared/Button/ButtonSubmit';
+import ButtonSubmit from '../shared/Button/Button';
 import Input from '../shared/Input/Input';
 
 function MakeShortLink() {
