@@ -8,6 +8,32 @@
   margin-bottom: 5px;
 }
 
+.result {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.result a {
+  padding-left: 3px;
+}
+
 .opacity {
   opacity: 0;
+}
+
+.copyButton {
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  top: 5px;
+  font-weight: 700;
+  cursor: copy;
+}
+
+.copyButton span {
+  padding-left: 2px;
+}
+
+.copyButton:hover svg {
+  fill: rgba(0, 0, 0, 0.56);
 }

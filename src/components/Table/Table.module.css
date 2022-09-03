@@ -8,7 +8,8 @@ thead th {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-
+  cursor: pointer;
+  position: relative;
   padding: 10px 0;
   background: #d8d8d8;
   border: none;
@@ -27,6 +28,13 @@ thead th {
 .table thead tr th:nth-child(2),
 .table tbody tr td:nth-child(2) {
   width: 17rem;
+  position: relative;
+}
+
+.table tbody tr td:nth-child(2) button {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
 }
 
 .table thead tr th:first-child,
@@ -38,11 +46,43 @@ thead th {
 
 .table thead tr th:last-child,
 .table tbody tr td:last-child {
-  width: 5rem;
+  width: 8rem;
   border-right: none;
   text-align: center;
 }
 
 .table tbody tr:nth-child(even) {
   background: #f3f3f3;
+}
+
+.loading tbody tr td {
+  animation: animate 1s infinite;
+}
+
+.loading tbody tr td svg {
+  animation: animateSvg 1s infinite;
+}
+
+@keyframes animate {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #90c1c6;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes animateSvg {
+  0% {
+    fill: #000;
+  }
+  50% {
+    fill: #90c1c6;
+  }
+  100% {
+    fill: #000;
+  }
 }

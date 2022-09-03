@@ -23,12 +23,14 @@ class ShortLinkService {
     }).then((res) => handleResponse(res));
   }
 
-  statistics(token, offset = 0, limit = 15) {
+  statistics(token, offset = 0, limit = 15, typeSort = '') {
     const headers = new Headers();
     headers.append('authorization', `Bearer ${token}`);
 
+    const sort = typeSort ? `order=${typeSort}&` : '';
+
     return fetch(
-      `${this.address}/statistics?order=asc_target&offset=${offset}&limit=${limit}`,
+      `${this.address}/statistics?${sort}&offset=${offset}&limit=${limit}`,
       {
         method: 'GET',
         headers,
