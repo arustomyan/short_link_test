@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Header.module.css';
+import authContext from '../../context/authContext';
 
 function Header() {
+  const { setIsLogged } = useContext(authContext);
+  const username = sessionStorage.getItem('username');
+
+  const handleLogout = () => {
+    sessionStorage.removeItem('username');
+    sessionStorage.removeItem('token');
+    setIsLogged(false);
+  };
+
   return (
     <header className={styles.root}>
       <div className={styles.header}>
         <h1 className={styles.logo}>Short Link</h1>
         <div className={styles.userInfo}>
-          <span>varustomyan</span>
-          <button type="button">
+          <span>{username}</span>
+          <button type="button" onClick={handleLogout}>
             <svg
               className={styles.svgLogout}
               width="26"

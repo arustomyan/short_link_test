@@ -16,6 +16,7 @@ function Login() {
   const [fetchLogin, isLoading] = useFetching(async () => {
     const responce = await ShortLinkApi.login(formValue);
     sessionStorage.setItem('token', responce.access_token);
+    sessionStorage.setItem('username', formValue.username);
     setIsLogged(true);
   });
 

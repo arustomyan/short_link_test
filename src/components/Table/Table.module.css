@@ -56,11 +56,11 @@ thead th {
 }
 
 .loading tbody tr td {
-  animation: animate 1s infinite;
+  animation: animate 2s infinite;
 }
 
 .loading tbody tr td svg {
-  animation: animateSvg 1s infinite;
+  animation: animateSvg 2s infinite;
 }
 
 @keyframes animate {
